@@ -1,0 +1,11 @@
+(library
+ (name expr)
+ (public_name grosz.expr)
+ (modules expr))
+
+(executable
+ (name main)
+ (public_name grosz)
+ (modules main)
+ (libraries grosz.expr))
+

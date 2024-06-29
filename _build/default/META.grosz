@@ -1,0 +1,9 @@
+package "expr" (
+  directory = "expr"
+  description = ""
+  requires = ""
+  archive(byte) = "expr.cma"
+  archive(native) = "expr.cmxa"
+  plugin(byte) = "expr.cma"
+  plugin(native) = "expr.cmxs"
+)

@@ -1,0 +1,32 @@
+(lang dune 3.9)
+(name grosz)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   dune-package
+   expr/expr.a
+   expr/expr.cma
+   expr/expr.cmi
+   expr/expr.cmt
+   expr/expr.cmti
+   expr/expr.cmx
+   expr/expr.cmxa
+   expr/expr.ml
+   expr/expr.mli
+   opam))
+ (libexec (expr/expr.cmxs))
+ (bin (grosz)))
+(library
+ (name grosz.expr)
+ (kind normal)
+ (archives (byte expr/expr.cma) (native expr/expr.cmxa))
+ (plugins (byte expr/expr.cma) (native expr/expr.cmxs))
+ (native_archives expr/expr.a)
+ (main_module_name Expr)
+ (modes byte native)
+ (modules
+  (singleton
+   (obj_name expr)
+   (visibility public)
+   (source (path Expr) (intf (path expr/expr.mli)) (impl (path expr/expr.ml))))))

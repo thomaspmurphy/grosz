@@ -1,0 +1,20 @@
+lib: [
+  "_build/install/default/lib/grosz/META"
+  "_build/install/default/lib/grosz/dune-package"
+  "_build/install/default/lib/grosz/expr/expr.a" {"expr/expr.a"}
+  "_build/install/default/lib/grosz/expr/expr.cma" {"expr/expr.cma"}
+  "_build/install/default/lib/grosz/expr/expr.cmi" {"expr/expr.cmi"}
+  "_build/install/default/lib/grosz/expr/expr.cmt" {"expr/expr.cmt"}
+  "_build/install/default/lib/grosz/expr/expr.cmti" {"expr/expr.cmti"}
+  "_build/install/default/lib/grosz/expr/expr.cmx" {"expr/expr.cmx"}
+  "_build/install/default/lib/grosz/expr/expr.cmxa" {"expr/expr.cmxa"}
+  "_build/install/default/lib/grosz/expr/expr.ml" {"expr/expr.ml"}
+  "_build/install/default/lib/grosz/expr/expr.mli" {"expr/expr.mli"}
+  "_build/install/default/lib/grosz/opam"
+]
+libexec: [
+  "_build/install/default/lib/grosz/expr/expr.cmxs" {"expr/expr.cmxs"}
+]
+bin: [
+  "_build/install/default/bin/grosz"
+]
